@@ -17,6 +17,7 @@ class Cube:
         thread2 = threading.Thread(target=side_sum, args=(50,))
 
         thread2.start()
+<<<<<<< HEAD
         thread1.start()
 
         thread2.join()
@@ -35,3 +36,9 @@ class Cube:
     # thread1.join()
     #
     # print("is Done!")
+=======
+        thread2.join()
+
+
+        print("is Done!")
+>>>>>>> 7de27c9 (Initial commit)
