@@ -17,10 +17,21 @@ class Cube:
         thread2 = threading.Thread(target=side_sum, args=(50,))
 
         thread2.start()
-
         thread1.start()
 
         thread2.join()
         thread1.join()
 
         print("is Done!")
+
+    # if __name__ == "__main__":
+    # thread2 = threading.Thread(target=calculate_square, args=(120,))
+    # thread1 = threading.Thread(target=calculate_cube, args=(50,))
+
+    # thread2.start()
+    # thread1.start()
+    #
+    # thread2.join()
+    # thread1.join()
+    #
+    # print("is Done!")
